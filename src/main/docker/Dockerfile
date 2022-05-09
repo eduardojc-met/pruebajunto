@@ -7,8 +7,8 @@ WORKDIR /app
 RUN npm  cache clear --force
  
 
- 
-COPY ["../../../package.json","../../../.npmrc","../../..//webpack/webpack.dev.js", "../../../default.conf","../../.././"] .
+RUN 
+COPY ["package.json",".npmrc","/webpack/webpack.dev.js", "./"] .
 COPY . .
 RUN npm config set strict-ssl false
 #RUN npm install
