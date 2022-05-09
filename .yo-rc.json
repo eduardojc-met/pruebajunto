@@ -1,0 +1,64 @@
+{
+  "generator-jhipster": {
+    "skipJhipsterDependencies": true,
+    "blueprints": [
+      {
+        "name": "@scfhq/generator-jhipster-foundation",
+        "version": "2.3.1"
+      }
+    ],
+    "otherModules": [
+      {
+        "name": "@scfhq/generator-jhipster-foundation",
+        "version": "2.3.1"
+      }
+    ],
+    "applicationType": "monolith",
+    "baseName": "testx",
+    "jhipsterVersion": "7.3.0",
+    "skipClient": false,
+    "skipServer": false,
+    "skipUserManagement": false,
+    "skipCheckLengthOfIdentifier": false,
+    "skipFakeData": false,
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "testFrameworks": [],
+    "pages": [],
+    "creationTimestamp": 1652094936846,
+    "configurationType": "configFiles",
+    "scfConfigurationServer": false,
+    "mailType": "mailLocal",
+    "scfMailServer": false,
+    "reactive": false,
+    "authenticationType": "jwt",
+    "authenticationTypeSaml": false,
+    "packageName": "testx.santander.app",
+    "serverPort": "8080",
+    "cacheProvider": "no",
+    "enableHibernateCache": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "postgresql",
+    "buildTool": "maven",
+    "serverSideOptions": [],
+    "websocket": false,
+    "searchEngine": false,
+    "messageBroker": false,
+    "enableSwaggerCodegen": false,
+    "serviceDiscoveryType": false,
+    "clientFramework": "react",
+    "withAdminUi": false,
+    "useExportFunction": false,
+    "enableTranslation": false,
+    "nativeLanguage": "es",
+    "jwtSecretKey": "NmRlYTFmZTkzMDA3ZmZmZTI3ODhmODUzNDdjNzU2Y2Y5N2U5N2EzMGMwMTRiZDU3Y2JlZGE3YTg2NDMyOWEzYmY1MDkyODc2OTYyY2MyYTM2MzI0ZjQ2MGMzMmY3MGNmMTRjNTFiNTU5NjRlYjdjNjYyZWFjNDQ5OTA1YjI4MmQ=",
+    "devServerPort": 9060,
+    "clientPackageManager": "npm",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "enableGradleEnterprise": false,
+    "languages": ["en", "fr"]
+  }
+}

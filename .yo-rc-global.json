@@ -1,0 +1,8 @@
+{
+  "@scfhq/generator-jhipster-foundation:2.3.1": {
+    "promptValues": {
+      "packageName": "testx.santander.app",
+      "nativeLanguage": "es"
+    }
+  }
+}
