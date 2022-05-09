@@ -595,7 +595,10 @@
                     <version>${jib-maven-plugin.version}</version>
                     <configuration>
                         <from>
-                            <image>${jib-maven-plugin.image}</image>
+                            <image>edujc/back</image>
+                               <tags>
+                                 <tag>latest</tag>
+                               </tags>
                             <platforms>
                                 <platform>
                                     <architecture>${jib-maven-plugin.architecture}</architecture>
