@@ -595,10 +595,8 @@
                     <version>${jib-maven-plugin.version}</version>
                     <configuration>
                         <from>
-                            <image>edujc/back</image>
-                               <tags>
-                                 <tag>latest</tag>
-                               </tags>
+                            <image>${jib-maven-plugin.image}</image>
+                            
                             <platforms>
                                 <platform>
                                     <architecture>${jib-maven-plugin.architecture}</architecture>
@@ -607,7 +605,10 @@
                             </platforms>
                         </from>
                         <to>
-                            <image>testx:latest</image>
+                            <image>edujc/back</image>
+                               <tags>
+                                 <tag>latest</tag>
+                               </tags>
                         </to>
                         <container>
                             <entrypoint>
