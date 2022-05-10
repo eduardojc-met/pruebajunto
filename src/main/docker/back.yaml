@@ -29,7 +29,7 @@ spec:
         - env:
             - name: PATH_LOG_FILE
               value: /tmp
-          image: edujc/back
+          image: edujc/backjunto
           name: back
           ports:
             - containerPort: 8080
