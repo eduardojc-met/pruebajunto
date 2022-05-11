@@ -24,7 +24,7 @@ RUN rm -rf ./*
 # Copy static assets from builder stage
 COPY --from=builder /app /usr/share/nginx/html
 RUN rm /etc/nginx/conf.d/default.conf
-COPY default.conf /etc/nginx/conf.d
+COPY ./src/main/docker/frontend/default.conf /etc/nginx/conf.d
 EXPOSE 8085
 # Containers run nginx with global directives and daemon off
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
