@@ -1,5 +1,3 @@
-
-# Stage 0, "build-stage", based on Node.js, to build and compile the frontend
 FROM node:16 AS builder
 WORKDIR /app
 
@@ -10,6 +8,7 @@ RUN npm  cache clear --force
 RUN 
 COPY ["package.json",".npmrc","/webpack/webpack.prod.js", "./"] .
 COPY . .
+RUN rm -rf ./target/*.jar
 RUN npm config set strict-ssl false
 #RUN npm install
 #RUN CI=true npm test
@@ -29,9 +28,3 @@ COPY default.conf /etc/nginx/conf.d
 EXPOSE 8085
 # Containers run nginx with global directives and daemon off
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
-
-
-
-
-
-
