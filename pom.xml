@@ -1054,13 +1054,13 @@
                                     <directory>${project.basedir}</directory>
                                     <excludes>
                                     
-                                        <include>src/main/webapp/**/*.*</include>
-                                        <include>target/classes/static/**/*.*</include>
-                                        <include>package-lock.json</include>
-                                        <include>package.json</include>
-                                        <include>webpack/*.*</include>
-                                        <include>tsconfig.json</include>
-                                        <include>.postcss.config.js</include>
+                                        <exclude>src/main/webapp/**/*.*</exclude>
+                                        <exclude>target/classes/static/**/*.*</exclude>
+                                        <exclude>package-lock.json</exclude>
+                                        <exclude>package.json</exclude>
+                                        <exclude>webpack/*.*</exclude>
+                                        <exclude>tsconfig.json</exclude>
+                                        <exclude>.postcss.config.js</exclude>
                                         <exclude>**/app/**/service-worker.js</exclude>
                                         <exclude>**/app/**/vendor.css</exclude>
                                     </excludes>
