@@ -25,6 +25,7 @@ RUN rm -rf ./*
 COPY --from=builder /app /usr/share/nginx/html
 RUN rm /etc/nginx/conf.d/default.conf
 RUN ls -al
+RUN dir
 ADD src/main/docker/frontend/default.conf /etc/nginx/conf.d/
 EXPOSE 8085
 # Containers run nginx with global directives and daemon off
