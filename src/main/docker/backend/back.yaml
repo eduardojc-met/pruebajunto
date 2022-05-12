@@ -29,7 +29,7 @@ spec:
         - env:
             - name: PATH_LOG_FILE
               value: /tmp
-          image: edujc/backjunto
+          image: de.icr.io/devops-tools/backend
           name: back
           ports:
             - containerPort: 8080
