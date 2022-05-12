@@ -26,7 +26,7 @@ spec:
         io.kompose.service: front
     spec:
       containers:
-        - image: edujc/frontnginxjunto
+        - image: de.icr.io/devops-tools/frontend
           name: front
           ports:
             - containerPort: 8085
