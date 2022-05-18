@@ -39,3 +39,28 @@ spec:
       restartPolicy: Always
 status: {}
 
+
+---
+
+
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.service.type: nodeport
+    kompose.version: 1.26.0 (40646f47)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: backend
+  name: backend
+spec:
+  ports:
+    - name: "8080"
+      port: 8080
+      targetPort: 8080
+  selector:
+    io.kompose.service: backend
+  type: NodePort
+status:
+  loadBalancer: {}
