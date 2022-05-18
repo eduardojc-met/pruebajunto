@@ -25,6 +25,8 @@ spec:
       labels:
         io.kompose.service: front
     spec:
+      imagePullSecrets:
+        - name: all-icr-io
       containers:
         - image: de.icr.io/devops-tools/frontend
           name: front
