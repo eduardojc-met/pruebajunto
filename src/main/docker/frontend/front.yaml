@@ -8,7 +8,7 @@ metadata:
   creationTimestamp: null
   labels:
     io.kompose.service: front
-  name: front
+  name: ${appname}
 spec:
   replicas: 1
   selector:
@@ -29,7 +29,7 @@ spec:
         - name: ibm-registry-apikey
       containers:
         - image: de.icr.io/devops-tools/frontend
-          name: front
+          name: ${appname}
           ports:
             - containerPort: 8085
           resources: {}
