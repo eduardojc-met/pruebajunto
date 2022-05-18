@@ -26,7 +26,7 @@ spec:
         io.kompose.service: front
     spec:
       imagePullSecrets:
-        - name: scfhq-publiccrossdev01-391a523e0203d3683790f242c9079785-0001
+        - name: scfhq-publiccrossdev01-391a523e0203d3683790f242c9079785-0002
       containers:
         - image: de.icr.io/devops-tools/frontend
           name: front
