@@ -7,13 +7,13 @@ metadata:
     kompose.version: 1.26.0 (40646f47)
   creationTimestamp: null
   labels:
-    io.kompose.service: back
-  name: back
+    io.kompose.service: backend
+  name: backend
 spec:
   replicas: 1
   selector:
     matchLabels:
-      io.kompose.service: back
+      io.kompose.service: backend
   strategy: {}
   template:
     metadata:
@@ -23,7 +23,7 @@ spec:
         kompose.version: 1.26.0 (40646f47)
       creationTimestamp: null
       labels:
-        io.kompose.service: back
+        io.kompose.service: backend
     spec:
       imagePullSecrets:
         - name: ibm-registry-apikey
@@ -32,7 +32,7 @@ spec:
             - name: PATH_LOG_FILE
               value: /tmp
           image: de.icr.io/devops-tools/backend
-          name: back
+          name: backend
           ports:
             - containerPort: 8080
           resources: {}
@@ -52,15 +52,15 @@ metadata:
     kompose.version: 1.26.0 (40646f47)
   creationTimestamp: null
   labels:
-    io.kompose.service: back
-  name: back
+    io.kompose.service: backend
+  name: backend
 spec:
   ports:
     - name: "8080"
       port: 8080
       targetPort: 8080
   selector:
-    io.kompose.service: back
+    io.kompose.service: backend
   type: NodePort
 status:
   loadBalancer: {}
