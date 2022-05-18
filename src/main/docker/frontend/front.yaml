@@ -26,7 +26,7 @@ spec:
         io.kompose.service: front
     spec:
       imagePullSecrets:
-        - name: default-token-7pdfm
+        - name: ibm-registry-apikey
       containers:
         - image: de.icr.io/devops-tools/frontend
           name: front
