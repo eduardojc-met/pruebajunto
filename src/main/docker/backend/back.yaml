@@ -26,7 +26,7 @@ spec:
         io.kompose.service: back
     spec:
       imagePullSecrets:
-        - name: all-icr-io
+        - name: ibm-registry-apikey
       containers:
         - env:
             - name: PATH_LOG_FILE
