@@ -25,6 +25,8 @@ spec:
       labels:
         io.kompose.service: back
     spec:
+      imagePullSecrets:
+        - name: all-icr-io
       containers:
         - env:
             - name: PATH_LOG_FILE
